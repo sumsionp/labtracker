@@ -1,0 +1,10 @@
+<h1><%= @requests.size %> requests</h1>
+<ul>
+	<% @requests.each do | request | %>
+		<li><%= request.engineer %></li>
+		<li><%= request.computer %></li>
+		<li><%= request.finalized %></li>
+		<li><%= request.start_date %></li>
+		<li><%= request.end_date %></li>
+	<% end %>
+</ul>
